@@ -3,8 +3,15 @@
 import os
 import sys
 
-from handlers import HelloworldHandlers
+from handlers import *
+# from handlers import HelloworldHandlers, IndexHandlers, LoginHandlers, UploadHandlers, AccessHandlers, IPAccess, RegisterHadnlers, get_conn
 
 handlers = [
-    (r"/", HelloworldHandlers),
+    (r"/helloworld/", HelloworldHandlers),
+    (r"/", IndexHandlers),
+    (r"/login/", LoginHandlers),
+    (r"/upload/", UploadHandlers),
+    (r"/access/", AccessHandlers),
+    (r"/ipaccess/", IPAccess),
+    (r"/register/", RegisterHadnlers, {'conn':get_conn()})
 ]
