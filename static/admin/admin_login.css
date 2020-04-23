@@ -1,0 +1,11 @@
+body {
+  background-color: honeydew;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  }
+  body > .grid {
+    height: 100%;
+  }
+  .column {
+    max-width: 450px;
+  }

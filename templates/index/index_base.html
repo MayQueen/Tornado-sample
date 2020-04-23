@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/global_themes/semantic.min.css"/>
+    <script type="text/javascript" src="/static/common_jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/global_themes/semantic.min.js"></script>
+
+    {% block custom_js %}
+    {% end %}
+    <title>Bee.Index</title>
+</head>
+
+    <body>
+        {% block middle_content %}
+            <!-- 首页-版面一菜单栏&logo&宣传语 -->
+            {% block middle_content_part_main %}
+            {% end %}
+
+            <!-- 首页-版面二-"Introduction"-->
+            {% block middle_content_part_second %}
+            {% end %}
+
+
+            <!--首页-版面三-"Article Share"-->
+            {% block middle_content_part_third %}
+            {% end %}
+
+            <!-- 首页-版面四-Picture Display Zone-->
+            {% block middle_content_part_fourth %}
+            {% end %}
+
+        {% end %}
+        <!-- 首页-版面五-"页脚"-->
+        <div class="ui inverted footer vertical segment">
+            <div class="ui stackable center aligned page grid">
+                <div class="ten wide column">
+                    <div class="ui three column center aligned stackable grid">
+                        <div class="column">
+                                <h5 class="ui inverted header">Links</h5>
+                                <div class="ui inverted link list">
+                                    <a class="item">WuHanBusinessUniversity</a>
+                                    <a class="item">Bee</a>
+                                    <a class="item">Professors</a>
+                                </div>
+                            </div>
+                        <div class="column">
+                                <h5 class="ui inverted header">Acknowledgments</h5>
+                                <div class="ui inverted link list">
+                                <a class="item">Python</a>
+                                <a class="item">Tornado</a>
+                                <a class="item">Sqlite3</a>
+                                </div>
+                        </div>
+                        <div class="column">
+                                <h5 class="ui inverted header">Legal Notice</h5>
+                                <div class="ui inverted link list">
+                                <a class="item">BBS</a>
+                                <a class="item">Careers</a>
+                                <a class="item">Privacy Policy</a>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="six wide column">
+                    <h5 class="ui inverted header">Contact Us</h5>
+                    <div class="ui inverted link list">
+                    <i class="at icon">邮件</i></a>
+                    <i class="weibo icon">新浪微博</i>
+                    <i class="wechat icon">微信公众号</i>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -21,7 +21,7 @@ class HelloworldHandlers(tornado.web.RequestHandler):
 # 主页
 class IndexHandlers(tornado.web.RequestHandler):
     def get(self):
-        self.render("login.html")
+        self.render("index/index.html")
 
 # 登录
 class LoginHandlers(tornado.web.RequestHandler):

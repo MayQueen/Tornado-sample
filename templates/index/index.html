@@ -1,0 +1,209 @@
+{% extends 'index_base.html' %}
+
+  {% block middle_content %} 
+
+    <!-- 首页-版面一Menu&logo& -->
+    {% block middle_content_part_main %}
+      <div class="ui inverted masthead">
+        <div class="ui page grid" >
+          <div class="column">
+            <div class="ui inverted middle teal menu">
+              <div class="header item">Beehive</div>
+              <div class="right menu">
+                <div class="ui dropdown item">
+                  Honor Gallery
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <a class="item">Certificate</a>
+                    <a class="item">Paper</a>
+                    <a class="item">Patent</a>
+                    <a class="item">Creative Ideas</a>
+                  </div>
+                </div>
+                <div class="ui dropdown item">
+                  Celebrity Wall
+                  <i class="dropdown icon"></i>
+                    <div class="menu">
+                    <a class="item">Beers</a>
+                    <a class="item">Contributors</a>
+                  </div>
+                </div>
+                <a class="item">Share Repository</a>
+                <a class="item">Community</a>
+              </div>
+            </div>
+            <div class="ui transition information" id="information_div">
+              <h1 class="ui inverted header">
+                An Splendid Zone For everyone In Bee.
+              </h1>
+              <h2 class="ui inverted header">Wonderful Things Always Worthy Of Expectation.</h2>
+              <div class="large basic inverted animated fade ui button">
+                <div class="visible content">Come to Bee Club</div>
+                <div class="hidden content"><a target="_Blank" href="/login/">Login</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 首页-版面二-"Introduction"-->
+    {% block middle_content_part_second %}
+      <div class="ui vertical feature segment" id="introduction_div">
+        <div class="ui centered page grid">
+          <div class="fourteen wide column">
+            <div class="ui three column center aligned stackable divided grid">
+              <div class="column">
+                <div class="ui icon header">
+                  <i class="student icon"></i>
+                  Honor Gallery
+                </div>
+                <p>The galleries that witnessed what we had gone through in the pass few years.</p>
+                <p>
+                  <a class="ui button" href="#">
+                    Expore
+                  </a>
+                </p>
+              </div>
+              <div class="column">
+                <div class="ui icon header">
+                  <i class="university icon"></i>
+                  Share Repository
+                </div>
+                <p>The extra place to broaden your horizon and release your thinking spark.</p>
+                <p>
+                  <a class="ui blue right labeled icon button" href="#">
+                    Research
+                    <i class="right chevron icon"></i>
+                  </a>
+                </p>
+              </div>
+              <div class="column">
+                <div class="ui icon header">
+                  <i class="user icon"></i>
+                  Community
+                </div>
+                <p>The entertainment space to enjoy your life and unleash the vitality of youth.</p>
+                <p>
+                  <a class="ui button"  target="_Blank" href="/login/">
+                    Begin
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% end %}
+
+    <!--首页-版面三-"Share Article"-->
+    {% block middle_content_part_third %}
+    <div class="ui inverted vertical segment">
+      <div class="ui very relaxed stackable page grid">
+        <div class="row">
+          <div class="column">
+            <h1 class="center aligned ui inverted header">
+              The Articles Share Zone
+            </h1>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="column">
+            <h3 class="ui inverted header">How to Win Your Cats Attention</h3>
+            <p>Getting your cat to notice you is a large part of being a pet owner. Although I have a lot of patience for writing things about cats, perhaps this might be enough body copy to make this section of text look filled out.</p>
+            <p>This and other tips can be found in our newsletter, amazing right?</p>
+            <div class="ui basic inverted animated button button">
+              <div class="visible content">Read More</div>
+              <div class="hidden content"><i class="right arrow icon"></i></div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <h3 class="ui inverted header">More articles</h3>
+            <div class="ui inverted animated selection list">
+              <div class="item">
+                How to win in a fight with a cat
+                <div class="right floated">Jan 20, 2023</div>
+              </div>
+              <div class="item">
+                A Supposedly Fun Cat Toy I will Never Buy Again
+                <div class="right floated">Jan 1, 2023</div>
+              </div>
+              <div class="item">
+                Much ado about yarn
+                <div class="right floated">Dec 20, 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% end %}
+
+    <!-- 首页-版面四-Picture Show Zone-->
+    {% block middle_content_part_fourth %}
+      <div class="ui vertical segment">
+        <div class="ui stackable center aligned page grid">
+            <div class="row">
+              <div class="column">
+                <h1 class="ui header">
+                  The Picture Display Zone
+                </h1>
+                <div class="ui horizontal divider"><i class="heart icon"></i></div>
+                
+                    <div class="ui three cards">
+                        <div class="card">
+                          <div class="ui slide masked reveal image">
+                              <img src="/static/index/img_s4/1.jpg" class="visible content">
+                              <img src="/static/index/img_s4/2.jpg" class="hidden content">
+                          </div>
+                          <div class="content">
+                            <a class="header">Team Fu</a>
+                            <div class="meta">
+                              <span class="date">Create in Sep 2014</span>
+                            </div>
+                          </div>
+                          <div class="extra content">
+                            <a><i class="red heart icon"></i>  7 Lovers </a>
+                          </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="ui slide masked reveal image">
+                                <img src="/static/index/img_s4/3.jpg" class="visible content">
+                                <img src="/static/index/img_s4/4.jpg" class="hidden content">
+                            </div>
+                            <div class="content">
+                              <a class="header">Team Fu</a>
+                              <div class="meta">
+                                <span class="date">Create in Sep 2014</span>
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <a><i class="red heart icon"></i> 8 Lovers </a>
+                            </div>
+                        </div>
+                    
+                        <div class="card">
+                            <div class="ui slide masked reveal image">
+                                <img src="/static/index/img_s4/1.jpg" class="visible content">
+                                <img src="/static/index/img_s4/2.jpg" class="hidden content">
+                            </div>
+                            <div class="content">
+                              <a class="header">Team Fu</a>
+                              <div class="meta">
+                                <span class="date">Create in Sep 2014</span>
+                              </div>
+                            </div>
+                            <div class="extra content">
+                              <a><i class="red heart icon"></i> 2 Lovers </a>
+                            </div>
+                        </div>
+                    </div>
+                
+
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    {% end %}
+  {% end %}
+{% end %}
